@@ -1,0 +1,194 @@
+/* ===== VARIÁVEIS CSS ===== */
+:root {
+  --cor-primaria: #b76e79;
+  --cor-primaria-escura: #9c5764;
+  --cor-secundaria: #2e2e2e;
+  --cor-fundo: #fdf8f6;
+  --cor-texto: #333;
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-texto: 'Poppins', sans-serif;
+  --espaco-sm: 0.5rem;
+  --espaco-md: 1rem;
+  --espaco-lg: 2rem;
+  --raio: 0.75rem;
+  --sombra: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== RESET / BOX MODEL ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-secundaria);
+}
+
+/* ===== HEADER / NAVBAR ===== */
+.header-essenza {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand-name {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--cor-primaria);
+  font-size: 1.3rem;
+  margin-left: var(--espaco-sm);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--cor-primaria) !important;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 4px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('../img/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: var(--espaco-lg);
+}
+
+/* ===== GRID DE SERVIÇOS ===== */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--espaco-lg);
+}
+
+.card-servico {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: var(--raio);
+  padding: var(--espaco-lg);
+  box-shadow: var(--sombra);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-servico > h3::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: var(--cor-primaria);
+  margin-top: var(--espaco-sm);
+}
+
+.card-servico-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--raio);
+  margin-bottom: var(--espaco-md);
+}
+
+.link-servico {
+  color: var(--cor-primaria);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link-servico:hover,
+.link-servico:focus-visible {
+  text-decoration: underline;
+}
+
+/* ===== BOTÕES ===== */
+.btn-primary {
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--cor-primaria-escura);
+  border-color: var(--cor-primaria-escura);
+}
+
+/* ===== FOOTER ===== */
+.footer-essenza {
+  background: var(--cor-secundaria);
+  color: #ddd;
+  padding: var(--espaco-lg) 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-essenza p {
+  margin: 0.25rem 0;
+}
+
+/* ===== FORMULÁRIOS ===== */
+.form-essenza label {
+  font-weight: 500;
+  margin-top: var(--espaco-md);
+}
+
+.form-essenza input:focus-visible,
+.form-essenza select:focus-visible,
+.form-essenza textarea:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 992px) {
+  .hero h1 { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.6rem; }
+  .hero { min-height: 60vh; }
+  .grid-servicos { grid-template-columns: 1fr; }
+  .brand-name { font-size: 1.1rem; }
+}
+
+
+/* Ajuste das fotos da equipe */
+.card-img-top {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  object-position: top !important;
+}
+
+

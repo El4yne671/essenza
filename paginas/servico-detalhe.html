@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detalhes do serviço de hidratação capilar da ESSENZA.">
+  <title>Detalhes do serviço — ESSENZA</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header-essenza">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo.svg" alt="Logo ESSENZA" width="40" height="40">
+          <span class="brand-name">ESSENZA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <nav aria-label="Trilha de navegação">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+        <li class="breadcrumb-item"><a href="servicos.html">Serviços</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Hidratação</li>
+      </ol>
+    </nav>
+
+    <div class="row g-4">
+      <article class="col-md-8">
+        <h1>Hidratação capilar</h1>
+        <img src="../img/servico-cabelo.jpg" alt="Cabelo sendo hidratado" class="img-fluid rounded shadow mb-3">
+        <p>
+          Tratamento profundo que repõe nutrientes e devolve brilho e maciez aos fios.
+          Indicado para cabelos ressecados ou danificados por química.
+        </p>
+
+        <h2>O que está incluso</h2>
+        <ul>
+          <li>Diagnóstico do fio</li>
+          <li>Lavagem com shampoo adequado</li>
+          <li>Aplicação de máscara nutritiva</li>
+          <li>Finalização com escova</li>
+        </ul>
+
+        <h2>Duração estimada</h2>
+        <p>Aproximadamente 1h30.</p>
+      </article>
+
+      <aside class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h5">Preço</h2>
+            <p class="fs-4 fw-bold text-danger">R$ 120,00</p>
+            <a href="agendamento.html" class="btn btn-primary w-100">Agendar este serviço</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mt-3">
+          <div class="card-body">
+            <h2 class="h6">Tabela de preços</h2>
+            <table class="table table-sm mb-0">
+              <thead>
+                <tr><th scope="col">Serviço</th><th scope="col">Preço</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Corte</td><td>R$ 80,00</td></tr>
+                <tr><td>Hidratação</td><td>R$ 120,00</td></tr>
+                <tr><td>Coloração</td><td>R$ 200,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer-essenza">
+    <div class="container">
+      <p>&copy; 2026 ESSENZA — Salão de Beleza. Todos os direitos reservados.</p>
+      <p>Elayne da Silva e Julia Rebeca — Projeto de Desenvolvimento de Aplicações Web I</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

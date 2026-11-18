@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ESSENZA — Salão de beleza com serviços de cabelo, unhas, estética e maquiagem. Agende online.">
+    <title>ESSENZA — Salão de Beleza </title>
+    <link rel="stylesheet" href="style.css"
+
+    <!--Bootstrap 5 via CDN--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ 
+     <!-- CSS próprio -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+      <!-- HEADER com navbar Bootstrap -->
+  <header class="header-essenza">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Logo ESSENZA" width="40" height="40">
+          <span class="brand-name">ESSENZA</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false"
+                aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/servicos.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/agendamento.html">Agendamento</a></li>
+            <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero-conteudo container">
+        <h1 id="titulo-hero">Beleza que realça quem você é</h1>
+        <p>Serviços de cabelo, unhas, estética e maquiagem com profissionais especializadas.</p>
+        <a href="paginas/agendamento.html" class="btn btn-primary btn-lg">Agendar agora</a>
+        <a href="paginas/servicos.html" class="btn btn-outline-light btn-lg ms-2">Ver serviços</a>
+      </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="container my-5" aria-labelledby="titulo-destaques">
+      <h2 id="titulo-destaques" class="text-center mb-4">Nossos serviços</h2>
+      <div class="grid-servicos">
+
+        <article class="card-servico">
+          <img src="img/servico-cabelo.jpg" alt="Profissional finalizando corte de cabelo" class="card-servico-img">
+          <h3>Cabelo</h3>
+          <p>Cortes, coloração, hidratação e penteados.</p>
+          <a href="paginas/servico-detalhe.html" class="link-servico">Ver detalhes</a>
+        </article>
+
+        <article class="card-servico">
+          <img src="img/servico-unhas.jpg" alt="Mãos com manicure em tons claros" class="card-servico-img">
+          <h3>Unhas</h3>
+          <p>Manicure, pedicure, alongamento e esmaltação.</p>
+          <a href="paginas/servico-detalhe.html" class="link-servico">Ver detalhes</a>
+        </article>
+
+        <article class="card-servico">
+          <img src="img/servico-estetica.jpg" alt="Sala de estética facial" class="card-servico-img">
+          <h3>Estética</h3>
+          <p>Limpeza de pele, massagens e tratamentos faciais.</p>
+          <a href="paginas/servico-detalhe.html" class="link-servico">Ver detalhes</a>
+        </article>
+
+        <article class="card-servico">
+          <img src="img/servico-maquiagem.jpg" alt="Maquiadora aplicando maquiagem em cliente" class="card-servico-img">
+          <h3>Maquiagem</h3>
+          <p>Maquiagem social, para eventos e noivas.</p>
+          <a href="paginas/servico-detalhe.html" class="link-servico">Ver detalhes</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SOBRE RÁPIDO -->
+    <section class="bg-light py-5" aria-labelledby="titulo-sobre-rapido">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/hero.jpg" alt="Interior do salão ESSENZA" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-6">
+            <h2 id="titulo-sobre-rapido">Sobre a ESSENZA</h2>
+            <p>Um espaço pensado para cuidar de você com conforto, atenção e profissionais experientes.</p>
+            <a href="paginas/sobre.html" class="btn btn-outline-secondary">Conheça a equipe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-essenza">
+    <div class="container">
+      <p>&copy; 2026 ESSENZA — Salão de Beleza. Todos os direitos reservados.</p>
+      <p>Elayne da Silva e Julia Rebeca — Projeto de Desenvolvimento de Aplicações Web I</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (para navbar responsiva) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS próprio (reservado para Entrega 3) -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
